@@ -1,0 +1,6 @@
+data/org.bsoldiers.vte.desktop.in
+data/org.bsoldiers.vte.metainfo.xml.in
+data/org.bsoldiers.vte.gschema.xml
+src/main.c
+src/vteditor-window.c
+src/vteditor-window.ui

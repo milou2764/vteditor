@@ -1,0 +1,3 @@
+[submodule "subprojects/libvtf"]
+	path = subprojects/libvtf
+	url = https://github.com/milou2764/libvtf.git
