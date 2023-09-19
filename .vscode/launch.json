@@ -9,7 +9,10 @@
             "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}/builddir/src/vteditor",
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+            "osx": {
+                "MIMode": "lldb",
+            }
         }
     ]
 }
