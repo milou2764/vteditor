@@ -112,7 +112,6 @@ open_dialog_cb (GObject *source_object, GAsyncResult *res, gpointer data) {
   VTFHEADER vtfHeader;
   void* dst;
   char* filename;
-  int height;
   vlUInt uiVTFImage;									// VTF image handle.
   GdkPixbuf* pixbuf;
 
@@ -142,7 +141,6 @@ open_dialog_cb (GObject *source_object, GAsyncResult *res, gpointer data) {
             printf(" Error converting input file:\n%s\n\n", vlGetLastError());
             return;
           }
-          height = vtfHeader.height;
           pixbuf = gdk_pixbuf_new_from_data(dst, GDK_COLORSPACE_RGB, false, 8, vtfHeader.width, vtfHeader.height, 3*vtfHeader.width, NULL, NULL);
           gtk_image_set_from_pixbuf(image, pixbuf);
 
